@@ -63,22 +63,6 @@
 	{
             "algo": "rx/0",
             "coin": null,
-            "url": "185.208.156.197:1303",
-
-            "rig-id": null,
-"nicehash": true,
-            "keepalive": true,
-
-"enabled": true,
-            "tls": false,
-            "tls-fingerprint": null,
-            "daemon": false,
-            "socks5": null,
-            "self-select": null,
-            "submit-to-origin": false
-        } , 	{
-            "algo": "rx/0",
-            "coin": null,
             "url": "176.65.137.85:8081",
             "user": "rr22rr",
             "pass": "zm2od5",
